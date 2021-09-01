@@ -1,0 +1,14 @@
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\bin\Debug\LoginAuthentication.exe.config
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\bin\Debug\LoginAuthentication.exe
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\bin\Debug\LoginAuthentication.pdb
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.csproj.AssemblyReference.cache
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.Properties.Resources.resources
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.csproj.GenerateResource.cache
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.csproj.CoreCompileInputs.cache
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.exe
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.pdb
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.csproj.CopyComplete
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.Login.resources
+C:\Users\Juana Gonzalez\source\repos\LoginAuthentication\LoginAuthentication\obj\Debug\LoginAuthentication.Register.resources
