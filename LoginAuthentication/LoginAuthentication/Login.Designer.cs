@@ -35,14 +35,15 @@ namespace LoginAuthentication
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -63,20 +64,22 @@ namespace LoginAuthentication
             // lineShape2
             // 
             this.lineShape2.BorderColor = System.Drawing.SystemColors.ButtonFace;
+            this.lineShape2.Enabled = false;
             this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 431;
-            this.lineShape2.X2 = 718;
-            this.lineShape2.Y1 = 278;
-            this.lineShape2.Y2 = 278;
+            this.lineShape2.X1 = 430;
+            this.lineShape2.X2 = 717;
+            this.lineShape2.Y1 = 279;
+            this.lineShape2.Y2 = 279;
             // 
             // lineShape1
             // 
             this.lineShape1.BorderColor = System.Drawing.SystemColors.ButtonFace;
+            this.lineShape1.Enabled = false;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 431;
-            this.lineShape1.X2 = 718;
-            this.lineShape1.Y1 = 207;
-            this.lineShape1.Y2 = 207;
+            this.lineShape1.X1 = 428;
+            this.lineShape1.X2 = 715;
+            this.lineShape1.Y1 = 214;
+            this.lineShape1.Y2 = 214;
             // 
             // rectangleShape1
             // 
@@ -100,30 +103,6 @@ namespace LoginAuthentication
             this.label1.TabIndex = 1;
             this.label1.Text = "Login";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(427, 179);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 27);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Username";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(428, 247);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 27);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Password";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -136,6 +115,7 @@ namespace LoginAuthentication
             this.button1.TabIndex = 4;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel1
             // 
@@ -200,20 +180,63 @@ namespace LoginAuthentication
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // txtUser
+            // 
+            this.txtUser.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUser.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.txtUser.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtUser.Location = new System.Drawing.Point(428, 182);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(158, 29);
+            this.txtUser.TabIndex = 10;
+            this.txtUser.Text = "Username";
+            this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter_1);
+            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave_1);
+            // 
+            // txtPass
+            // 
+            this.txtPass.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.txtPass.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtPass.Location = new System.Drawing.Point(430, 250);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(158, 29);
+            this.txtPass.TabIndex = 11;
+            this.txtPass.Text = "Password";
+            this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
+            this.txtPass.Leave += new System.EventHandler(this.txtPass_Leave);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.MidnightBlue;
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.LinkColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.linkLabel2.Location = new System.Drawing.Point(617, 282);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(104, 13);
+            this.linkLabel2.TabIndex = 12;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "I forgot my password";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.shapeContainer1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -221,6 +244,7 @@ namespace LoginAuthentication
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -234,15 +258,16 @@ namespace LoginAuthentication
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private System.Windows.Forms.Label label1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.Label label2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
 

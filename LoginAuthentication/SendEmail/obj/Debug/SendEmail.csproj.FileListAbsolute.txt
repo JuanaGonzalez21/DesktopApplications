@@ -1,0 +1,10 @@
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\bin\Debug\SendEmail.exe.config
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\bin\Debug\SendEmail.exe
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\bin\Debug\SendEmail.pdb
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\obj\Debug\SendEmail.csproj.AssemblyReference.cache
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\obj\Debug\SendEmail.Form1.resources
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\obj\Debug\SendEmail.Properties.Resources.resources
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\obj\Debug\SendEmail.csproj.GenerateResource.cache
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\obj\Debug\SendEmail.csproj.CoreCompileInputs.cache
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\obj\Debug\SendEmail.exe
+C:\Users\Juana Gonzalez\source\repos\Proyectos-en-asp.net---WindowsForm\LoginAuthentication\SendEmail\obj\Debug\SendEmail.pdb
